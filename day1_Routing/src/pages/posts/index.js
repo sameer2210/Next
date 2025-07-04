@@ -13,7 +13,7 @@ export async function getStaticProps(context) {
 const Homepage = (props) => {
   return (
     <div className="py-10 px-[10%] font-thin ">
-      <h1 className="text-3xl">Posts</h1>
+      <h1 className="text-4xl">Posts</h1>
       {props.posts.map((post) => (
         <p className="p-2 bg-zinc-200 rounded mb-3" key={post.id}>
           <Link href={`/posts/${post.id}`}> {post.title}</Link>
