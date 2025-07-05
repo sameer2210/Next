@@ -17,7 +17,7 @@ export async function getStaticProps(context) {
   const { params } = context;
   const res = await fetch(`https://fakestoreapi.com/products/${params.id}`);
   const strres = await res.json();
-  console.log(strres);
+  // console.log(strres);
   return {
     props: {
       post: strres
