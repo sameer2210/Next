@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "title": "Faux Leather Jacket",
+    "price": "59.99",
+    "description": "Stylish men's faux leather jacket for winter.",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Silver Chain Bracelet",
+    "price": "19.99",
+    "description": "Elegant silver chain bracelet for women.",
+    "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Slim Fit Cotton Shirt",
+    "price": "29.95",
+    "description": "Comfortable cotton shirt for men with slim fit design.",
+    "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Samsung Monitor",
+    "price": "199.99",
+    "description": "Samsung curved LED monitor - Full HD display.",
+    "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Solid Gold Ring",
+    "price": "299.99",
+    "description": "18K Solid gold ring with diamond-cut edges.",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Backpack for Men",
+    "price": "45.00",
+    "description": "Water-resistant men's backpack for travel and office use.",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "1751825716261",
+    "title": "sam",
+    "price": "69",
+    "description": "kasdfljslfkjssljflskkjflksdkfjlksdjdf",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]
