@@ -14,7 +14,7 @@ export default function Header() {
           Create Product
         </Link>
         <Link href="/users" className="hover:underline">
-          Users
+          Users SWR
         </Link>
       </nav>
     </header>
