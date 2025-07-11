@@ -1,40 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+1. useEffect
+   Runs on: Client
+➤ This hook runs in the browser after the component mounts.
 
-## Getting Started
+Good for: Manual fetching
+➤ It's commonly used to fetch data manually using fetch or axios.
 
-First, run the development server:
+Needed with SWR?: ❌ Not needed with SWR
+➤ SWR replaces the need for useEffect in most client-side data fetching cases.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. getStaticProps
+   Runs on: Server (build)
+➤ Runs at build time (during static site generation), not in the browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Good for: Static pages (SSG)
+➤ Useful when your data doesn't change often and can be pre-rendered.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Needed with SWR?: ✅ Optional for initial data
+➤ You can use it with SWR to provide initial static data and let SWR revalidate in the client.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. getServerSideProps
+   Runs on: Server (each req)
+➤ Runs on every request on the server (SSR).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Good for: Dynamic, SEO pages
+➤ Ideal for pages that need real-time or per-request data, and also care about SEO.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Needed with SWR?: ✅ Optional for SSR + SWR
+➤ Can be used to preload data, and then SWR can keep it updated on the client.
 
-## Learn More
+4. useSWR
+   Runs on: Client
+➤ Works in the browser after page loads.
 
-To learn more about Next.js, take a look at the following resources:
+Good for: Live/fresh UI data
+➤ Great for keeping data fresh, handling caching, revalidation, and auto updates.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Needed with SWR?: ✅ Main tool
+➤ This is SWR itself — it's your main hook for fetching and updating data on the client side.

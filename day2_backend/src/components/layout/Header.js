@@ -16,6 +16,9 @@ export default function Header() {
         <Link href="/users" className="hover:underline">
           Users SWR
         </Link>
+         <Link href="/deployment" className="hover:underline">
+          Deployment
+        </Link>
       </nav>
     </header>
   );
